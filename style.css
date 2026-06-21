@@ -61,6 +61,11 @@ color:#60a5fa;
 
 .logo svg{
     flex-shrink:0;
+    transition:0.3s ease;
+}
+
+.logo:hover svg{
+    transform:translateY(-2px);
 }
 
 .hero{
