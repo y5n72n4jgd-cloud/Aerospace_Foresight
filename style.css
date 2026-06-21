@@ -51,8 +51,16 @@ color:#60a5fa;
 }
 
 .logo{
-font-weight:700;
-font-size:1.2rem;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:1.15rem;
+    font-weight:700;
+    letter-spacing:0.5px;
+}
+
+.logo svg{
+    flex-shrink:0;
 }
 
 .hero{
