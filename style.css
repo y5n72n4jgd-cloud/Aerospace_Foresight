@@ -244,8 +244,8 @@ border-color:#60a5fa;
     border-color:#60a5fa;
 
     box-shadow:
-        0 0 100px rgba(96,165,250,0.6),
-        0 0 140px rgba(96,165,250,0.4);
+        0 0 230px rgba(96,165,250,1.5),
+        0 0 2800px rgba(96,165,250,1.35);
 }
 
 .card h2{
