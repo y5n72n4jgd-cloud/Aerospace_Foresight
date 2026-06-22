@@ -241,7 +241,18 @@ border-color:#60a5fa;
 }
 
 .card h2{
-margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.arrow{
+    transition:0.3s ease;
+    font-size:0.8em;
+}
+
+.card.active .arrow{
+    transform:rotate(180deg);
 }
 
 .card p{
