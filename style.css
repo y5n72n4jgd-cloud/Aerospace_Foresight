@@ -312,10 +312,10 @@ nav ul{
 
 
 .content{
-    padding-top:10px;
-    background:red;
+    padding-top:120px;
 }
 
 .page-title{
-    margin-top:100px;
+    margin-top:0;
+    margin-bottom:50px;
 }
