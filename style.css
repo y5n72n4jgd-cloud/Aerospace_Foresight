@@ -14,6 +14,15 @@ body{
     color:white;
 }
 
+:root{
+    --space:#020617;
+    --blue:#2563eb;
+    --cyan:#38bdf8;
+    --glass:rgba(255,255,255,0.08);
+    --text:#e2e8f0;
+}
+
+
 .stars{
 position:fixed;
 inset:0;
@@ -88,9 +97,6 @@ color:#60a5fa;
 
     position:relative;
     overflow:hidden;
-
-    z-index:1;
-    gap:24px;
 }
 
 .hero::before{
@@ -98,25 +104,45 @@ color:#60a5fa;
 
     position:absolute;
 
-    width:500px;
-    height:500px;
+    width:600px;
+    height:600px;
 
-    background:#2563eb;
+    background:radial-gradient(
+        circle,
+        rgba(37,99,235,0.35),
+        transparent 70%
+    );
 
-    border-radius:50%;
+    top:50%;
+    left:50%;
 
-    filter:blur(180px);
+    transform:translate(-50%,-50%);
 
-    opacity:0.15;
-
-    z-index: 0;
+    z-index:0;
 }
 
-.hero h1{
-    font-size:clamp(4rem, 9vw, 8rem);
-    font-weight:800;
-    line-height:0.95;
-    letter-spacing:-0.04em;
+.hero-content{
+    position:relative;
+    z-index:1;
+}
+
+.hero-content{
+    animation:fadeUp 1s ease;
+}
+
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
 }
 
 .tag{
@@ -215,20 +241,26 @@ gap:25px;
 }
 
 .card{
-    background:rgba(255,255,255,0.04);
-    border:1px solid rgba(255,255,255,0.08);
-    backdrop-filter:blur(10px);
-    border-radius:20px;
-    padding:30px;
-    transition:0.3s;
 
-    cursor:pointer;
-    overflow:hidden;
+background:var(--glass);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,0.1);
+
+border-radius:20px;
+
+transition:0.3s;
+
 }
 
+
 .card:hover{
+
 transform:translateY(-8px);
-border-color:#60a5fa;
+
+box-shadow:0 20px 50px rgba(37,99,235,0.25);
+
 }
 
 .card.active{
