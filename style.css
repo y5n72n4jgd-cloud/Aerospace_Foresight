@@ -127,16 +127,120 @@ color:#60a5fa;
     z-index:0;
 }
 
+/* ---------- ABOUT HERO ---------- */
+
 .about-hero{
-    min-height:55vh;
+
+    min-height:60vh;
 
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
 
-    padding:0 30px;
+    padding:120px 30px 80px;
+
+}
+
+.about-hero h1{
+
+    font-size:clamp(3rem,7vw,6rem);
+
+    line-height:1.05;
+
+    margin-top:20px;
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #7dd3fc
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.about-subtitle{
+
+    margin-top:30px;
+
+    font-size:1.25rem;
+
+    color:rgba(255,255,255,0.75);
+
+}
+
+/* ---------- Divider ---------- */
+
+.section-divider{
+
+    width:140px;
+    height:2px;
+
+    margin:0 auto;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #2563eb,
+        transparent
+    );
+
+}
+
+/* ---------- Mission ---------- */
+
+.mission{
+
+    padding:100px 30px;
+
+}
+
+.mission-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.mission-tag{
+
+    color:#60a5fa;
+
+    letter-spacing:4px;
+
+    font-size:0.85rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.mission h2{
+
+    font-size:clamp(2rem,5vw,3.2rem);
+
+    line-height:1.2;
+
+    margin-bottom:30px;
+
+}
+
+.mission-text{
+
+    color:rgba(255,255,255,0.78);
+
+    line-height:2;
+
+    font-size:1.15rem;
+
 }
 
 .hero-content{
